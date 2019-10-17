@@ -1,0 +1,32 @@
+{% set options = { items: {'@page.children': '/works'}, 'limit': 10, 'order': {'by': 'default', 'dir': 'desc'}, 'pagination': true } %}
+{% set my_collection = page.collection(options) %}
+
+<div class="works-container">
+
+    <h3 class="modular_title">{{ page.title }}</h3>
+
+    {% for p in my_collection %}
+
+        <div class="card-box">
+            <a href="{{ p.url }}" class="card" title="Go to {{ p.title }}">
+                <div class="card-header">
+                    <div class="card-title">
+                            {{ p.title }}
+                    </div>
+                </div>
+                
+                {% set oneworklist = p.header.onework|split(',') %}
+                {% if p.header.onework %}
+                <div class="card-tags">
+                    {% for key,value in oneworklist %}
+                        <p class="item-card-tags">{{ value }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+            </a>
+        </div>
+
+    {% endfor %}
+
+</div>

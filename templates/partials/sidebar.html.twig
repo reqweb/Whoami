@@ -1,0 +1,56 @@
+
+<section class="sidebar">
+
+<div class="sidebar-close">
+    <span class="sidespan1">&#9668;</span> <span class="sidespan2">Hide</span>
+</div>
+
+<div class="sidebar-part">
+    <div class="box-photo">
+        {% set mainphoto = theme_var('mainphoto') %}
+        {% if mainphoto %}
+
+        {% set mainphoto = (mainphoto|first).name %}
+          <img class="photo" src="{{ url('theme://images/' ~ mainphoto)  }}" alt="{{ site.name }}" />
+        {% else %}
+          <div class="nophoto">?</div>
+        {% endif %}
+    </div>
+</div>
+
+{% set maintitle = theme_var('maintitle') %}
+    {% if maintitle %}
+    <div class="sidebar-part">
+        <h1 class="maintitle">{{ maintitle }}</h1>
+    </div>
+{% endif %}
+
+{% set maindescription = theme_var('maindescription') %}
+    {% if maindescription %}
+    <div class="sidebar-part">
+        <h2 class="maindescription">{{ maindescription }}</h2>
+    </div>
+{% endif %}
+
+{% set myactivity = theme_var('myactivity') %}
+{% set myactivityname = theme_var('myactivityname') %}
+    {% if myactivity %}
+    <h3 class="myactivityname">{{ myactivityname }}</h3>
+    <div class="sidebar-part">
+        <p class="myactivity">{{ myactivity }}</p>
+    </div>
+{% endif %}
+
+{% set inworkuse = theme_var('inworkuse') %}
+{% set inworkusename = theme_var('inworkusename') %}
+    {% if inworkuse %}
+    <h3 class="inworkusename">{{ inworkusename }}</h3>
+    <div class="sidebar-part box-inworkuse">
+        {% set inworkuselist = inworkuse|split(',') %}
+        {% for key,value in inworkuselist %}
+            <p class="item-inworkuse">{{ value }}</p>
+        {% endfor %}
+    </div>
+{% endif %}
+
+</section>

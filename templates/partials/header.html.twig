@@ -1,0 +1,25 @@
+<header>
+
+    <div class="content">
+
+    {% set headertitle = theme_var('headertitle') %}
+        {% if headertitle%}
+        <div class="header_logo">
+            <a href="/" >{{ headertitle }}</a>
+        </div>
+    {% else %}
+        <div class="header_logo">
+            <a href="/" >SITE NAME</a>
+        </div>
+    {% endif %}
+
+        <div class="mylinks">
+        {% set headlink = theme_var('pageinheader') %}
+        {% for key, value in headlink %}
+                <a href="{{ value }}" class="item-mylinks">{{ key }}</a>
+        {% endfor %}
+        </div>
+        
+    </div>
+
+</header>

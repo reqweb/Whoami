@@ -1,0 +1,16 @@
+<div class="content-item">
+
+    <div class="content-item-title">
+        <a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
+    </div>
+
+    <div class="content-item-txt">
+        {{ page.content }}
+    </div>
+
+    {% if page.header.continue_link is sameas(true) and config.plugins.comments.enabled %}
+        {% include 'partials/comments.html.twig' %}
+    {% endif %}
+
+
+</div>

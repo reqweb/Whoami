@@ -1,0 +1,20 @@
+
+<div class="card-box">
+    <a href="{{ page.url }}" class="card" title="Go to {{ page.title }}">
+        <div class="card-header">
+            <div class="card-title">
+                    {{ page.title }}
+            </div>
+        </div>
+        
+        {% set oneworklist = page.header.onework|split(',') %}
+        {% if page.header.onework %}
+        <div class="card-tags">
+            {% for key,value in oneworklist %}
+                <p class="item-card-tags">{{ value }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+    </a>
+</div>

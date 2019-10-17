@@ -1,0 +1,17 @@
+<div class="contacts-container">
+
+    <h3 class="modular_title">{{ page.title }}</h3>
+
+    <div class="contacts-box">
+        {% for contact in page.header.contacts %}
+        
+        {% if contact.url %}
+            <a href="{{ contact.url }}" class="contact" {% if contact.target == 1 %}target="blank"{% endif %}>{{ contact.text }}</a>
+        {% else %}
+            <div class="contact">{{ contact.text }}</div>
+        {% endif %}
+            
+        {% endfor %}
+    </div>
+
+</div>
