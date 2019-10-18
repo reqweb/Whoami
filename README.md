@@ -21,7 +21,7 @@ inworkuse: 'php,html,css,js'         # skills (sidebar)
 inworkusename: 'In my work I use:'   # header block "skills" (sidebar)
 myactivity: 'Freelance'              # block "on the work" (sidebar)
 myactivityname: 'My activity:'       # header block "on the work" (sidebar)
-headertitle: My Site                 # site name (header)
+headertitle: 'My Site'               # site name (header)
 pageinheader:                        # array links (header)
   Works: /works
 footertxt: 'Reqweb © 2019'           # copyright (footer)
