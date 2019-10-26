@@ -1,1 +1,12 @@
 extends@: default
+
+form:
+  fields:
+    tabs:
+    
+      fields:
+        content:
+          fields:
+            header.description:
+              type: text
+              label: description (meta)

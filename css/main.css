@@ -478,8 +478,25 @@ footer {
         height: auto;
     }
 }
-
-
+.breadcrumbs-box {
+    width: 100%;
+    margin: 0 0 7px 0;
+    padding: 14px 0 4px 0;
+    border-top: 1px solid var(--txtcolor2);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+#breadcrumbs {
+    height: auto;
+    line-height: normal;
+    padding-left: 0;
+}
+#breadcrumbs a{
+    color: #3983ea;
+}
+#breadcrumbs span {
+    padding: 0px 0px;
+}
 
 
 

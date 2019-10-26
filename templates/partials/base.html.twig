@@ -1,3 +1,5 @@
+{% set headdescription = header.description %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -6,7 +8,7 @@
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include 'partials/metadata.html.twig' %}
+    <meta name="description" content="{{ headdescription }}" />
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
     {% block stylesheets %}
