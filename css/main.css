@@ -438,39 +438,45 @@ footer {
 }
 
 @media (max-width: 567px){
-    
-.sidebar-close{
-    display: none;
-}   
-.sidebar {
-    width: 100%;
-    padding: 0 0 30px 0;
-}
-.maintitle {
-    font-size: 20px;
-} 
-.maindescription {
-    font-size: 17px;
-    margin: 7px 0 0 0;
-}   
-.inworkusename, .myactivityname {
-    font-size: 17px;
-}
-.item-inworkuse {
-    font-size: 12px;
-}
-.page-content {
-    width: 100%;
-}
-.contact {
-    width: 100%;
-}
-.item-content {
-    padding: 0 0 0 0;
-}
-
-    
-    
+    .sidebar-close{
+        display: none;
+    }   
+    .sidebar {
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+    .maintitle {
+        font-size: 20px;
+    } 
+    .maindescription {
+        font-size: 17px;
+        margin: 7px 0 0 0;
+    }   
+    .inworkusename, .myactivityname {
+        font-size: 17px;
+    }
+    .item-inworkuse {
+        font-size: 12px;
+    }
+    .page-content {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .item-content {
+        padding: 0 0 0 0;
+    }
+    .card-title {
+        min-height: 40px;
+    }
+    .item-card-tags{
+        margin: 0 7px 5px 0;
+    }
+    .card {
+        min-height: 90px;
+        height: auto;
+    }
 }
 
 
