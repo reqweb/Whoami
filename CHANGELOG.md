@@ -1,10 +1,10 @@
-# 1.0.0
+# v1.0.0
 ## 17/10/2019
 
 1. [](#new)
     * ChangeLog started...
   
-# 1.1.0
+# v1.1.0
 ## 17/10/2019
 1. [](#correction)
     * Corrected main.css for mobile devices
