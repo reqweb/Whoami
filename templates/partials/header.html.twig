@@ -1,25 +1,45 @@
-<header>
+{% set fixedhead = theme_var('fixedhead') %}
+
+<header class="{% if fixedhead == 1 %}fixedhead{% endif %}">
 
     <div class="content">
-
-    {% set headertitle = theme_var('headertitle') %}
-        {% if headertitle%}
+    
+    {% if sidebar_headertitle%}
+    <div class="header_linkbox">
         <div class="header_logo">
-            <a href="/" >{{ headertitle }}</a>
+            <a href="/" >{{ sidebar_headertitle }}</a>
         </div>
+        <div class="mobile-headbox">
+        <div id="mobile_menu" class="key-menu">
+            <div class="key-menu_item keyitem_1"></div>
+            <div class="key-menu_item keyitem_2"></div>
+            <div class="key-menu_item keyitem_3"></div>
+        </div>
+        {% include 'partials/langswitcher.html.twig' %}
+        </div>
+    </div>
     {% else %}
         <div class="header_logo">
             <a href="/" >SITE NAME</a>
         </div>
     {% endif %}
-
-        <div class="mylinks">
-        {% set headlink = theme_var('pageinheader') %}
-        {% for key, value in headlink %}
-                <a href="{{ value }}" class="item-mylinks">{{ key }}</a>
-        {% endfor %}
+        <div class="header_linkbox desctop">
+            <div class="mylinks">
+            {% for key, value in sidebar_pageinheader %}
+                    <a href="{{ value }}" class="item-mylinks">{{ key }}</a>
+            {% endfor %}    
+            </div>
+                {% include 'partials/langswitcher.html.twig' %}
         </div>
         
     </div>
 
 </header>
+
+    <div class="mobile-menu">
+        <div class="mylinks">
+        {% for key, value in sidebar_pageinheader %}
+                <a href="{{ value }}" class="item-mylinks">{{ key }}</a>
+        {% endfor %}    
+        </div>
+    </div>

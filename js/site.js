@@ -11,9 +11,10 @@ $(".sidebar-close").on('click', function() {
 	$('.page-content').toggleClass("page-content-sidebar_hide");
 });
 
-
-
-
+$("#mobile_menu").on('click', function() {
+	$(this).toggleClass("mobile_menu_on");
+	$('.mobile-menu').toggleClass("mobile-menu_on");
+});
 
 
 

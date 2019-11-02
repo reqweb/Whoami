@@ -1,13 +1,16 @@
-name: Whoami
-version: 1.0.0
-description: Reqweb Theme for Portfolio
+name:  Whoami
+version: 2.0.0
+description: "Simple template for a portfolio."
 icon:  user
 author:
- name: Alex Radov
- email: reqweb-dev@yandex.ru
- url: http://reqweb.net
-homepage: 
+    name: Alex Radov
+    email: reqweb-dev@yandex.ru
+    url: http://reqweb.net
+homepage: https://github.com/reqweb/Whoami
 demo: http://reqweb.net/
+docs: https://github.com/reqweb/Whoami/blob/master/README.md
+keywords: portfolio, blog, development
+bugs: https://github.com/reqweb/Whoami/issues
 license: MIT
 
 form:
@@ -20,69 +23,13 @@ form:
       title: Header
       underline: true
         
-    headertitle:
-      type: text
-      label: Header title
-      size: large
-  
-    pageinheader:
-      type: array
-      label: Link in header
-      placeholder_key: Name (name link in header)
-      placeholder_value: Url (url this link)
-  
-    sidebar_section:
-      type: section
-      title: Sidebar
-      underline: true
-  
-    mainphoto:
-      type: file
-      label: Main photo
-      size: large
-      destination: 'theme://images'
-      multiple: false
-      markdown: true
-      description: The photo is displayed in the sidebar
-      accept:
-        - image/*
-        
-    maintitle:
-      type: text
-      label: Who are you? (Name)
-      size: large
-      
-    maindescription:
-      type: text
-      label: Who are you? (Description)
-      size: large 
-      
-    myactivityname:
-      type: text
-      label: My activity (Name)
-      size: large
-      
-    myactivity:
-      type: text
-      label: My activity
-      size: large
-      
-    inworkusename:
-      type: text
-      label: Title block "in work use"
-      size: large
-      
-    inworkuse:
-      type: selectize
-      label: Block "In work use"
-      size: large
-      
-    footer_section:
-      type: section
-      title: Header
-      underline: true
-        
-    footertxt:
-      type: text
-      label: Text in footer
-      size: large
+    fixedhead:
+      type: toggle
+      label: Fixed header
+      highlight: 1
+      default: 0
+      options:
+          1: 'Yes'
+          0: 'No'
+      validate:
+          type: bool

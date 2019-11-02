@@ -1,6 +1,5 @@
 <footer>
-    {% set footertxt = theme_var('footertxt') %}
-        {% if footertxt%}
-        <div class="footer-text">{{ footertxt }}</div>
+    {% if sidebar_footertxt%}
+        <div class="footer-text">{{ sidebar_footertxt }}</div>
     {% endif %}
 </footer>
