@@ -19,9 +19,9 @@
 
 1. [Correction](#correction)
     * Removed theme settings for sidebar and header.
-1. [Fixed](#bugfix)
+2. [Fixed](#bugfix)
     * Fixed h1 and h2 headers in detailed work page and sidebar.
-1. [New](#new)
+3. [New](#new)
     * Now you can configure multilanguage on the site
     * Added ability to enable fixed for header (top: 0;) in theme configuration.
     * Added mobile menu for mobile devices.
