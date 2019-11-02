@@ -1,6 +1,6 @@
 ## Whoami - theme portfolio for GRAV CMS
 
-**For a full understanding I recommend you to install the demo page.**
+**For a full understanding I recommend you to install the demo pages.**
 
 Modular templates:
 * soc.html.twig - Contacts (its separate blueprints)
@@ -10,6 +10,8 @@ Modular templates:
 
 ---
 
+The theme supports the **Breadcrumbs** plugin.  
+In version 2.0.0 there is support for two languages and the **Langswitcher** plugin.
 
 ### The template for the sidebar - **sidebar.html.twig**
 ```
