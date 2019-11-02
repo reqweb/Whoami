@@ -11,7 +11,8 @@ Modular templates:
 ---
 
 The theme supports the **Breadcrumbs** plugin.  
-In version 2.0.0 there is support for two languages and the **Langswitcher** plugin.
+In version 2.0.0 there is support for two languages and the **Langswitcher** plugin.  
+In the theme configuration, you can set _position: fixed_ for header.
 
 ### The template for the sidebar - **sidebar.html.twig**
 ```
