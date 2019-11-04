@@ -1,3 +1,9 @@
+# v2.0.2
+## 05/11/2019
+
+1. [Correction](#correction)
+    * Changing the CHANGELOG.md to update the theme correctly.
+
 # v2.0.0
 ## 02/11/2019
 
