@@ -383,6 +383,13 @@ footer {
 .bodynonscroll{
     overflow: hidden;
 }
+.content img{
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #c5c5c5;
+    max-width: 100%;
+    margin: 20px 0 35px 0;
+}
 @media (max-width: 1320px){
     .content {
         padding: 0 25px 0 25px;
