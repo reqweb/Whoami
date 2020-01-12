@@ -7,7 +7,8 @@
     {% if sidebar_headertitle%}
     <div class="header_linkbox">
         <div class="header_logo">
-            <a href="/" >{{ sidebar_headertitle }}</a>
+            {% set base_lang_url = base_url_simple ~ grav.language.getLanguageURLPrefix(language) %}
+            <a href="{{ base_lang_url }}" >{{ sidebar_headertitle }}</a>
         </div>
         <div class="mobile-headbox">
         <div id="mobile_menu" class="key-menu">

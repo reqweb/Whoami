@@ -10,3 +10,14 @@ form:
             header.description:
               type: text
               label: description (meta)
+              
+            header.sideon:
+              type: toggle
+              label: Sidebar
+              highlight: 1
+              default: 1
+              options:
+                1: ON
+                0: OFF
+              validate:
+                type: bool

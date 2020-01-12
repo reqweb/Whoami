@@ -1,6 +1,7 @@
 ---
 title: 'Test page №3'
 media_order: 'b1.jpg,b2.jpg,b3.jpg'
+sideon: true
 onework: 'html,css,js,twig'
 blog_url: /blog
 ---

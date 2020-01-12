@@ -1,6 +1,7 @@
 ---
 title: Works
 description: 'Reqweb - Works'
+sideon: true
 menu: 'Мои работы'
 content:
     items:
@@ -11,6 +12,7 @@ content:
         dir: desc
     pagination: true
     url_taxonomy_filters: true
+langon: false
 blog_url: /blog
 show_sidebar: false
 show_breadcrumbs: true

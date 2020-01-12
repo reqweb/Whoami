@@ -1,6 +1,7 @@
 ---
 title: 'Test page №4'
 media_order: 'ph1.jpg,ph2.jpg'
+sideon: true
 onework: 'html,css,js,twig'
 ---
 

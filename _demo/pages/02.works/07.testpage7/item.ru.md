@@ -1,5 +1,6 @@
 ---
 title: 'Тестовая запись №7'
+sideon: true
 onework: 'php,twig'
 ---
 

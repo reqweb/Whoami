@@ -1,5 +1,6 @@
 ---
 title: 'Test page №6'
+sideon: true
 onework: 'html,css,js,twig,php,CBRcurrency'
 ---
 

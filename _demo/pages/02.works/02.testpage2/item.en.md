@@ -1,6 +1,7 @@
 ---
 title: 'Test page №2'
 media_order: '767567567.jpg,ajTZkPSzMyc.jpg,bOHfePlTqQI.jpg,KAJ0tRfR8pE.jpg,RjFPPgLhVzI.jpg'
+sideon: true
 onework: 'php,html,css,js'
 ---
 

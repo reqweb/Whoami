@@ -1,4 +1,5 @@
 {% extends 'partials/base.html.twig' %}
+{% set collection = page.collection() %}
 
 {% if page.header.show_breadcrumbs is defined %}
     {% set show_breadcrumbs = page.header.show_breadcrumbs %}
@@ -6,17 +7,25 @@
     {% set show_breadcrumbs = true %}
 {% endif %}
 
-{% block content %}
-<section class="page-content">
+{% block body %}
 
+<section class="page-content">
+	
 	{% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
     <div class="breadcrumbs-box">
 		{% include 'partials/breadcrumbs.html.twig' %}
     </div>
 	{% endif %}
 
-    <h1 class="default_title">{{ page.title }}</h1>
-
-    {{ page.content }}
+    <div class="blog-container">
+    
+    <h3 class="modular_title">{{ page.title }}</h3>
+    
+        {% for child in collection %}
+            {% include 'partials/blog2-list-item.html.twig' with {blog: page, page: child} %}
+        {% endfor %}
+        
+    </div>
 </section>
+    
 {% endblock %}

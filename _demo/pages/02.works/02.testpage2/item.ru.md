@@ -1,5 +1,6 @@
 ---
 title: 'Тестовая запись №2'
+sideon: true
 onework: 'php,html,css,js'
 ---
 

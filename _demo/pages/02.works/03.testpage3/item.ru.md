@@ -1,5 +1,6 @@
 ---
 title: 'Тестовая запись №3'
+sideon: true
 onework: 'html,css,js,twig'
 blog_url: /blog
 ---

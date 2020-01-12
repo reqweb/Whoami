@@ -1,5 +1,6 @@
 ---
-title: 'Test page №8'
+title: 'Test page №8 (sidebar disabled)'
+sideon: false
 onework: 'twig,html,css,js,grav'
 ---
 

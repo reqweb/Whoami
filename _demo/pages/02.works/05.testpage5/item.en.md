@@ -1,6 +1,7 @@
 ---
 title: 'Test page №5'
 media_order: 'stb1.jpg,stb2.jpg,stb3.jpg,stb5.jpg'
+sideon: true
 onework: 'html,css,js,grav learn'
 taxonomy:
     tag:

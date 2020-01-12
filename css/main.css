@@ -343,6 +343,12 @@ header .content {
 .modular_txt-container{
     
 }
+code{
+    background-color: #295088;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
 footer {
     height: 60px;
     background: #2a2f33;
@@ -354,6 +360,28 @@ footer {
 }
 .sidebar-close{
     display: none;
+}
+.no-side .page-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog2 {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.blog2 .card {
+    height: 70px;
+}
+.default_title {
+    width: 100%;
+    margin: 10px 10px 0 0px;
+    padding: 10px 0 15px 0;
+    border-top: 1px solid var(--txtcolor2);
+    box-sizing: border-box;
+}
+.bodynonscroll{
+    overflow: hidden;
 }
 @media (max-width: 1320px){
     .content {
@@ -512,6 +540,7 @@ footer {
 .langswitcher {
     transform: none;
     top: 0;
+    user-select: none;
     margin-left: 2rem !important;
     position: relative;
     overflow: hidden;
@@ -531,8 +560,8 @@ footer {
     font-size: 12px;
     padding: 0px 9px;
 }
-.langswitcher > a:nth-child(1){
-    border-right: 1px solid var(--txtcolor3);
+.langswitcher > a:nth-child(2) {
+    border-left: 1px solid var(--txtcolor3);
 }
 .langswitcher .active{
     font-weight: normal;

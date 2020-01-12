@@ -1,6 +1,7 @@
 ---
 title: Works
 description: 'Reqweb - Works'
+sideon: true
 content:
     items:
         - '@self.children'

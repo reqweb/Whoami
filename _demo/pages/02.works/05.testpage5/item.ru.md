@@ -1,5 +1,6 @@
 ---
 title: 'Тестовая запись №5'
+sideon: true
 onework: 'html,css,js,grav learn'
 taxonomy:
     tag:

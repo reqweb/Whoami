@@ -1,6 +1,7 @@
 ## Whoami - theme portfolio for GRAV CMS
 
-**For a full understanding I recommend you to install the demo pages.**
+A simple portfolio theme.  
+Static sidebar. The main page is modular. Works page-blog.  
 
 Modular templates:
 * soc.html.twig - Contacts (its separate blueprints)
@@ -10,11 +11,8 @@ Modular templates:
 
 ---
 
-The theme supports the **Breadcrumbs** plugin.  
-In version 2.0.0 there is support for two languages and the **Langswitcher** plugin.  
-In the theme configuration, you can set _position: fixed_ for header.
 
-### The template for the sidebar - **sidebar.html.twig**
+### The main theme settings
 ```
 mainphoto:                           # photo (sidebar)
 maintitle: 'John Doe'                # name (sidebar)

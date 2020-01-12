@@ -1,5 +1,6 @@
 ---
 title: 'Test page №7'
+sideon: true
 onework: 'php,twig'
 ---
 

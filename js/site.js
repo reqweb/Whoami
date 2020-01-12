@@ -14,6 +14,7 @@ $(".sidebar-close").on('click', function() {
 $("#mobile_menu").on('click', function() {
 	$(this).toggleClass("mobile_menu_on");
 	$('.mobile-menu').toggleClass("mobile-menu_on");
+	$('body').toggleClass("bodynonscroll");
 });
 
 
