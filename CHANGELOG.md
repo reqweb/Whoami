@@ -1,3 +1,8 @@
+# v2.1.2
+## 12/01/2020
+  * Fixed styles for <img> in the default template
+  * Update file blueprints.yaml
+
 # v2.1.0
 ## 12/01/2020
 
