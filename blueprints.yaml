@@ -5,7 +5,6 @@ icon:  user
 author:
     name: Alex Radov
     email: reqweb-dev@yandex.ru
-    url: http://reqweb.net
 homepage: https://github.com/reqweb/Whoami
 demo: http://reqweb.net/
 docs: https://github.com/reqweb/Whoami/blob/master/README.md
