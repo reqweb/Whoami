@@ -3,9 +3,11 @@ version: 2.1.2
 description: "Simple template for a portfolio."
 icon:  user
 author:
-    name: Alex Radov
+    name: Alex
     email: reqweb-dev@yandex.ru
+    url: https://rqwb.ru/
 homepage: https://github.com/reqweb/Whoami
+demo: https://whoami.rqwb.ru/
 docs: https://github.com/reqweb/Whoami/blob/master/README.md
 keywords: portfolio, blog, development
 bugs: https://github.com/reqweb/Whoami/issues
