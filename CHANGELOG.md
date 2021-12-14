@@ -1,3 +1,9 @@
+# v2.1.4
+## 14/12/2021
+
+1. [](#correction)
+    * Update file blueprints.yaml
+
 # v2.1.3
 ## 04/12/2021
 
