@@ -1,31 +1,36 @@
 # v2.1.3
 ## 04/12/2021
-  * Update file blueprints.yaml
+
+1. [](#correction)
+    * Update file blueprints.yaml
 
 # v2.1.2
 ## 12/01/2020
-  * Fixed styles for <img> in the default template
-  * Update file blueprints.yaml
+
+1. [](#bugfix)
+    * Fixed styles for <img> in the default template
+1. [](#correction)
+    * Update file blueprints.yaml
 
 # v2.1.0
 ## 12/01/2020
 
 1. [](#bugfix)
-  * Fixed the behavior of the block langswitcher (if there is no page translation)
-  * Fixed url logo in header - now it corresponds to the active language
+    * Fixed the behavior of the block langswitcher (if there is no page translation)
+    * Fixed url logo in header - now it corresponds to the active language
 1. [](#new)
-  * Added the ability to enable or disable the sidebar on each page
-  * Added template Blog-2
-  * Updated demo pages in theme '_demo' folder
+    * Added the ability to enable or disable the sidebar on each page
+    * Added template Blog-2
+    * Updated demo pages in theme '_demo' folder
 
 # v2.0.0
 ## 02/11/2019
 
-1. [Correction](#correction)
+1. [](#correction)
     * Removed theme settings for sidebar and header.
-1. [Fixed](#bugfix)
+1. [](#bugfix)
     * Fixed h1 and h2 headers in detailed work page and sidebar.
-1. [New](#new)
+1. [](#new)
     * Now you can configure multilanguage on the site
     * Added ability to enable fixed for header (top: 0;) in theme configuration.
     * Added mobile menu for mobile devices.
@@ -44,7 +49,7 @@
 
 1. [](#correction)
     * Corrected main.css for mobile devices
-2. [](#new)
+1. [](#new)
     * Added in blueprints field for name="description" (in default.yaml)
-3. [](#new)
+1. [](#new)
     * Breadcrumbs output added to item.html.twig and default.html.twig template (if the plugin is active)
