@@ -10,7 +10,7 @@
         {% if page.header.onework %}
         <div class="card-tags">
             {% for key,value in oneworklist %}
-                <p class="item-card-tags">{{ value }}</p>
+                <p class="item-card-tags">{{ value|raw }}</p>
             {% endfor %}
         </div>
         {% endif %}

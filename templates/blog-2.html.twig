@@ -19,7 +19,7 @@
 
     <div class="blog-container">
     
-    <h3 class="modular_title">{{ page.title }}</h3>
+    <h3 class="modular_title">{{ page.title|raw }}</h3>
     
         {% for child in collection %}
             {% include 'partials/blog2-list-item.html.twig' with {blog: page, page: child} %}

@@ -1,3 +1,10 @@
+# v2.1.5
+## 12/11/2024
+
+1. [](#correction)
+    * Updated templates (add |raw)
+    * Update file blueprints.yaml
+
 # v2.1.4
 ## 12/14/2021
 

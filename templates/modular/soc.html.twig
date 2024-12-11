@@ -8,7 +8,7 @@
         {% if contact.url %}
             <a href="{{ contact.url }}" class="contact" {% if contact.target == 1 %}target="blank"{% endif %}>{{ contact.text }}</a>
         {% else %}
-            <div class="contact">{{ contact.text }}</div>
+            <div class="contact">{{ contact.text|raw }}</div>
         {% endif %}
             
         {% endfor %}

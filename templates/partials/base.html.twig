@@ -1,5 +1,4 @@
 {% set sidebar = pages.find('/sidebar') %}
-
 {% set sideon = header.sideon %}
 {% set fixedhead = theme_var('fixedhead') %}
 {% set headdescription = header.description %}
@@ -13,7 +12,6 @@
 {% set sidebar_inworkusename =  sidebar.header.inworkusename %}
 {% set sidebar_inworkuse =  sidebar.header.inworkuse %}
 {% set sidebar_footertxt =  sidebar.header.footertxt %}
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -29,12 +27,12 @@
         {% do assets.addCss('theme://css/main.css') %}
         {% do assets.addCss('theme://css/custom.css') %}
     {% endblock %}
-    {{ assets.css() }}
+    {{ assets.css()|raw }}
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
         {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
     {% endblock %}
-    {{ assets.js() }}
+    {{ assets.js()|raw }}
 {% endblock head %}
 </head>
 
@@ -57,7 +55,7 @@
 {% include 'partials/footer.html.twig' %}
 
 {% block bottom %}
-    {{ assets.js('bottom') }}
+    {{ assets.js('bottom')|raw }}
 {% endblock %}
 
 </body>

@@ -15,8 +15,8 @@
     </div>
 	{% endif %}
 
-    <h1 class="default_title">{{ page.title }}</h1>
+    <h1 class="default_title">{{ page.title|raw }}</h1>
 
-    {{ page.content }}
+    {{ page.content|raw }}
 </section>
 {% endblock %}

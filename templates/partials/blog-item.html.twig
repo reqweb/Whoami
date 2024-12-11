@@ -13,11 +13,11 @@
 	{% endif %}
 
     <div class="content-item-title">
-        <a href="{{ page.url }}"><h1>{{ page.title }}</h1></a>
+        <a href="{{ page.url }}"><h1>{{ page.title|raw }}</h1></a>
     </div>
 
     <div class="content-item-txt">
-        {{ page.content }}
+        {{ page.content|raw }}
     </div>
 
     {% if page.header.continue_link is sameas(true) and config.plugins.comments.enabled %}

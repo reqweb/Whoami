@@ -18,20 +18,20 @@
 
     {% if sidebar_maintitle %}
     <div class="sidebar-part">
-        <h2 class="maintitle">{{ sidebar_maintitle }}</h2>
+        <h2 class="maintitle">{{ sidebar_maintitle|raw }}</h2>
     </div>
     {% endif %}
 
     {% if sidebar_maindescription %}
     <div class="sidebar-part">
-        <h2 class="maindescription">{{ sidebar_maindescription }}</h2>
+        <h2 class="maindescription">{{ sidebar_maindescription|raw }}</h2>
     </div>
     {% endif %}
 
     {% if sidebar_myactivity %}
-    <h3 class="myactivityname">{{ sidebar_myactivityname }}</h3>
+    <h3 class="myactivityname">{{ sidebar_myactivityname|raw }}</h3>
     <div class="sidebar-part">
-        <p class="myactivity">{{ sidebar_myactivity }}</p>
+        <p class="myactivity">{{ sidebar_myactivity|raw }}</p>
     </div>
     {% endif %}
 
@@ -40,7 +40,7 @@
     <div class="sidebar-part box-inworkuse">
         {% set inworkuselist = sidebar_inworkuse|split(',') %}
         {% for key,value in inworkuselist %}
-            <p class="item-inworkuse">{{ value }}</p>
+            <p class="item-inworkuse">{{ value|raw }}</p>
         {% endfor %}
     </div>
     {% endif %}
